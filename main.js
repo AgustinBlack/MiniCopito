@@ -1,4 +1,4 @@
-// const arrayDeCatalogo = "./data/data.json"
+const arrayDeCatalogo = "./json/data.json"
 
 // function cargarYMostrarProductos(tipo) {
 //     fetch('./data/data.json')
@@ -34,7 +34,7 @@
 // }
 
 function cargarYMostrarProductos() {
-    fetch('./data/data.json')
+    fetch('./json/data.json')
         .then(response => response.json())
         .then(data => {
             mostrarProductos(data);
