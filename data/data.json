@@ -1,0 +1,23 @@
+{
+    "enterito": [
+        {
+            "id": 1,
+            "nombre": "Dante",
+            "imagen": "",
+            "estilo": "enterito",
+            "talle": "1-2-3-4",
+            "precio": 1800
+        }
+    ],
+    "conjunto": [
+        {
+            "id": 2,
+            "nombre": "Jazmín",
+            "imagen": "",
+            "estilo": "conjunto",
+            "talle": "1-2-3-4",
+            "precio": 2450
+        }
+    ],
+    "pantalon": []
+}

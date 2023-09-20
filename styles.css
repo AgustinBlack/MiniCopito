@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+
+.bg-dark{
+    background-color: #aee1e1ab !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding-bottom: 10px !important;
+}
+
+.text-body-emphasis{
+    color: #c82c2ceb !important;
+    font-weight: 400;
+}
+
+.navUl{
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    list-style: none;
+}
+
+.navA{
+    color: #c82c2cd1;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navA:hover{
+    border-radius: 3px;
+    background-color: #c82c2cd1;
+    color: white;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+/* FOOTER */
+
+.piePagina{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.piePaginaFotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.piePaginaTexto{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 570px) {
+    .bg-dark{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navUl{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLi{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
