@@ -46,6 +46,21 @@
     font-weight: 500;
 }
 
+/* PRODUCTOS */
+
+.divProductos{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divCard{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 /* FOOTER */
 
 .piePagina{
