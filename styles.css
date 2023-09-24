@@ -68,12 +68,25 @@
 }
 
 .divImg{
-    width: 110px;
-    height: 150px;
+    width: 168px;
+    height: 220px;
+    border-radius: 5px;
 }
 
 .divInfo{
     margin-top: 10px;
+}
+
+.divInfoNombre{
+    width: 168px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
 }
 
 .divInfoTalle{
@@ -125,5 +138,17 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+
+    .divImg{
+        width: 110px;
+        height: 150px;
+    }
+
+    .divInfoNombre{
+        width: 110px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
