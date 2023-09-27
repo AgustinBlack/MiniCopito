@@ -67,6 +67,12 @@
     margin-right: 5px;
 }
 
+.divCard:hover{
+    background-color: #d99d92;
+    border-radius: 6px;
+    transition: 1.5s;
+}
+
 .divImg{
     width: 168px;
     height: 220px;
@@ -82,11 +88,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-@keyframes scroll-left {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
 }
 
 .divInfoTalle{
@@ -115,6 +116,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 @media(max-width: 570px) {
     .bg-dark{
