@@ -180,8 +180,8 @@
     }
 
     .divImg{
-        width: 110px;
-        height: 150px;
+        width: 145px;
+        height: 210px;
     }
 
     .divInfoNombre{
@@ -192,7 +192,12 @@
     }
 
     .carousel-inner {
-        height: 153px !important;
-        width: 111px !important;
+        height: 216px !important;
+        width: 146px !important;
+    }
+
+    .piePaginaTitulo{
+        display: flex;
+        flex-direction: row;
     }
 }
