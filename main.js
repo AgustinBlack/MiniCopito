@@ -149,4 +149,29 @@ function cambiarVistaProductos() {
       contenedor.style.flexDirection = "column";
     });
   }
-  
+
+//FILTRAR POR ESTILO
+
+let botones = document.querySelectorAll("#navA");
+
+for (let i = 0; i < botones.length; i++) {
+    botones[i].addEventListener("click", filtrar);
+}
+
+function filtrar() {
+    let botonTocado = this.textContent.toLowerCase();
+    let productosMostrados = [];
+
+    for (let i = 0; i < arrayDeCatalogo.length; i++) {
+        if (arrayDeCatalogo[i].estilo.toLowerCase().includes(botonTocado)) {
+            productosMostrados.push(arrayDeCatalogo[i]);
+        }
+    }
+
+    mostrarProductos(productosMostrados);
+}   
+
+let botonInicio = document.getElementById("inicioProductos")
+botonInicio.addEventListener("click", function() {
+    mostrarProductos(arrayDeCatalogo)
+})
