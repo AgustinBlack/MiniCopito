@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-end;
     flex-wrap: wrap;
     padding-bottom: 10px !important;
 }
@@ -19,6 +19,10 @@
 .text-body-emphasis{
     color: #c82c2ceb !important;
     font-weight: 400;
+}
+
+.nav{
+    align-items: flex-start;
 }
 
 .navUl{
@@ -46,6 +50,16 @@
     font-weight: 500;
 }
 
+.navBotones:hover{
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover{
+    border: 2px solid black;
+    border-radius: 3px;
+
+}
+
 /* PRODUCTOS */
 
 .divProductos{
@@ -61,15 +75,14 @@
     padding: 10px;
     margin-bottom: 10px;
     color: white;
-    background-color: #F7CDC6;
+    background-color: #d99d92;
     border-radius: 6px;    
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .divCard:hover{
-    background-color: #d99d92;
-    border-radius: 6px;
+    transform: scale(1.03);
     transition: 1s;
 }
 
@@ -100,7 +113,7 @@
 
 .carousel-inner {
     height: 220px !important;
-    width: 168px !important;
+    width: 172px !important;
 }
 
 /* FOOTER */
@@ -109,6 +122,14 @@
     background-color: black;
     color: white;
     padding: 10px;
+}
+
+.piePaginaInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .piePaginaFotos{
@@ -120,11 +141,18 @@
 .piePaginaTexto{
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 467px;
 }
 
 
 @media(max-width: 570px) {
     .bg-dark{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav{
         display: flex;
         flex-direction: column;
     }
@@ -138,6 +166,10 @@
     .navLi{
         margin-bottom: 5px;
         margin-top: 5px;
+    }
+
+    .navBotones{
+        margin-top: 10px;
     }
 
     .divProductos{
@@ -157,5 +189,10 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .carousel-inner {
+        height: 153px !important;
+        width: 111px !important;
     }
 }

@@ -14,6 +14,17 @@ const arrayDeCatalogo = [
     },
     {
         id: 2,
+        nombre: "Astor",
+        imagen: [
+            "./images/conjunto-jazmin-3.jpeg",
+            "./images/vestido.jpeg"
+        ],
+        estilo: "Enterito",
+        talle: "1-2-3-4",
+        precio: 1900
+    },
+    {
+        id: 3,
         nombre: "Jazmín",
         imagen: [
             "./images/conjunto-jazmin.jpeg",
@@ -25,17 +36,7 @@ const arrayDeCatalogo = [
         talle: "1-2-3-4",
         precio: 2450
     },
-    {
-        id: 3,
-        nombre: "Astor",
-        imagen: [
-            "./images/conjunto-jazmin-3.jpeg",
-            "./images/vestido.jpeg"
-        ],
-        estilo: "Enterito",
-        talle: "1-2-3-4",
-        precio: 1900
-    },
+
     {
         id: 4,
         nombre: "Pedro",
@@ -130,22 +131,22 @@ function mostrarProductos(arrayProductos) {
 
 mostrarProductos(arrayDeCatalogo)
 
-// FILTRAR POR ESTILO
+//BOTONES VISTAS
 
-// let enterito = document.getElementById("enterito")
-// enterito.addEventListener("click", filtrarPorEstilo)
+function cambiarVistaProductos() {
+    const botonOriginal = document.getElementById("material-symbols-outlined-1");
+    const botonColumna = document.getElementById("material-symbols-outlined-2");
+    let contenedor = document.getElementById("divProductos")
 
-// let conjunto = document.getElementById("conjuntos")
-// conjunto.addEventListener("click", filtrarPorEstilo)
-
-// let vestido = document.getElementById("vestidos")
-// vestido.addEventListener("click", filtrarPorEstilo)
-
-// function filtrarPorEstilo() {
-//     const estilo = this.id;
-//     const productosFiltrados = arrayDeCatalogo.filter(producto => {
-//         return producto.estilo === estilo;
-//     });
-//     mostrarProductos(productosFiltrados);
-// }
+    botonOriginal.addEventListener("click", () => {
+      contenedor.style.display = "flex";
+      contenedor.style.flexDirection = "row";
+      contenedor.style.flexWrap = "wrap";
+    });
+  
+    botonColumna.addEventListener("click", () => {
+      contenedor.style.display = "flex";
+      contenedor.style.flexDirection = "column";
+    });
+  }
   
