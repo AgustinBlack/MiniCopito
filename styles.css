@@ -70,7 +70,7 @@
 .divCard:hover{
     background-color: #d99d92;
     border-radius: 6px;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .divImg{
@@ -96,6 +96,11 @@
 
 .divInfoPrecio{
     margin-bottom: 5px !important;
+}
+
+.carousel-inner {
+    height: 220px !important;
+    width: 168px !important;
 }
 
 /* FOOTER */

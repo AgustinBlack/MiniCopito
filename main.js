@@ -4,6 +4,9 @@ const arrayDeCatalogo = [
         nombre: "Dante",
         imagen: [
             "./images/enterito-dante.jpeg",
+            "./images/enterito-dante-2.jpeg",
+            "./images/enterito-dante-3.jpeg",
+            "./images/enterito-dante-4.jpeg"
         ],
         estilo: "Enterito",
         talle: "1-2-3-4",
@@ -25,7 +28,10 @@ const arrayDeCatalogo = [
     {
         id: 3,
         nombre: "Astor",
-        imagen: ["./images/conjunto-jazmin-3.jpeg"],
+        imagen: [
+            "./images/conjunto-jazmin-3.jpeg",
+            "./images/vestido.jpeg"
+        ],
         estilo: "Enterito",
         talle: "1-2-3-4",
         precio: 1900
@@ -33,7 +39,10 @@ const arrayDeCatalogo = [
     {
         id: 4,
         nombre: "Pedro",
-        imagen: ["./images/enterito-dante-3.jpeg"],
+        imagen: [
+            "./images/enterito-dante-3.jpeg",
+            "./images/vestido.jpeg"
+        ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2300
@@ -41,7 +50,10 @@ const arrayDeCatalogo = [
     {
         id: 5,
         nombre: "Franka",
-        imagen: ["./images/enterito-dante-4.jpeg"],
+        imagen: [
+            "./images/enterito-dante-4.jpeg",
+            "./images/vestido.jpeg"
+        ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2000
@@ -49,7 +61,10 @@ const arrayDeCatalogo = [
     {
         id: 6,
         nombre: "Vestido floreado con puntilla",
-        imagen: ["./images/vestido.jpeg"],
+        imagen: [
+            "./images/vestido.jpeg",
+            "./images/vestido.jpeg"
+        ],
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2800
@@ -64,7 +79,7 @@ function mostrarProductos(arrayProductos) {
         let card = document.createElement("div")
         card.innerHTML = `
             <div class="divCard">
-                <div id="carouselExample" class="carousel slide">
+                <div id="${producto.id}" class="carousel slide">
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
@@ -73,7 +88,7 @@ function mostrarProductos(arrayProductos) {
 
                         ${producto.imagen.length > 1 ? `
                         <div class="carousel-item">
-                            <img class="divImg" id="divImg" src="${producto.imagen[0]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="divImg" src="${producto.imagen[1]}" class="d-block w-100" alt="...">
                         </div>
                         ` 
                         :''}
@@ -91,11 +106,11 @@ function mostrarProductos(arrayProductos) {
                         ` : ''}
 
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample-${producto.id}" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#${producto.id}" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample-${producto.id}" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#${producto.id}" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -114,9 +129,23 @@ function mostrarProductos(arrayProductos) {
 }
 
 mostrarProductos(arrayDeCatalogo)
-                    // <div class="carousel-item">
-                    //     <img class="divImg" src="${producto.imagen[1]}" class="d-block w-100" alt="...">
-                    // </div>
-                    // <div class="carousel-item">
-                    //     <img class="divImg" src="${producto.imagen[2]}" class="d-block w-100" alt="...">
-                    // </div>
+
+// FILTRAR POR ESTILO
+
+// let enterito = document.getElementById("enterito")
+// enterito.addEventListener("click", filtrarPorEstilo)
+
+// let conjunto = document.getElementById("conjuntos")
+// conjunto.addEventListener("click", filtrarPorEstilo)
+
+// let vestido = document.getElementById("vestidos")
+// vestido.addEventListener("click", filtrarPorEstilo)
+
+// function filtrarPorEstilo() {
+//     const estilo = this.id;
+//     const productosFiltrados = arrayDeCatalogo.filter(producto => {
+//         return producto.estilo === estilo;
+//     });
+//     mostrarProductos(productosFiltrados);
+// }
+  
