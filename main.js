@@ -131,25 +131,6 @@ function mostrarProductos(arrayProductos) {
 
 mostrarProductos(arrayDeCatalogo)
 
-//BOTONES VISTAS
-
-function cambiarVistaProductos() {
-    const botonOriginal = document.getElementById("material-symbols-outlined-1");
-    const botonColumna = document.getElementById("material-symbols-outlined-2");
-    let contenedor = document.getElementById("divProductos")
-
-    botonOriginal.addEventListener("click", () => {
-      contenedor.style.display = "flex";
-      contenedor.style.flexDirection = "row";
-      contenedor.style.flexWrap = "wrap";
-    });
-  
-    botonColumna.addEventListener("click", () => {
-      contenedor.style.display = "flex";
-      contenedor.style.flexDirection = "column";
-    });
-  }
-
 //FILTRAR POR ESTILO
 
 let botones = document.querySelectorAll("#navA");
@@ -175,3 +156,4 @@ let botonInicio = document.getElementById("inicioProductos")
 botonInicio.addEventListener("click", function() {
     mostrarProductos(arrayDeCatalogo)
 })
+
