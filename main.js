@@ -84,25 +84,25 @@ function mostrarProductos(arrayProductos) {
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img class="divImg" id="divImg" src="${producto.imagen[0]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[0]}" class="d-block w-100" alt="...">
                         </div>
 
                         ${producto.imagen.length > 1 ? `
                         <div class="carousel-item">
-                            <img class="divImg" id="divImg" src="${producto.imagen[1]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[1]}" class="d-block w-100" alt="...">
                         </div>
                         ` 
                         :''}
 
                         ${producto.imagen.length > 2 ? `
                         <div class="carousel-item">
-                            <img class="divImg" id="divImg" src="${producto.imagen[2]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[2]}" class="d-block w-100" alt="...">
                         </div>
                         ` : ''}
 
                         ${producto.imagen.length > 3 ? `
                         <div class="carousel-item">
-                            <img class="divImg" id="divImg" src="${producto.imagen[3]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[3]}" class="d-block w-100" alt="...">
                         </div>
                         ` : ''}
 
@@ -157,3 +157,13 @@ botonInicio.addEventListener("click", function() {
     mostrarProductos(arrayDeCatalogo)
 })
 
+//FUNCION QUE AGRANDA IMG
+
+function agrandarImagen(img) {
+    // let imagen = document.querySelectorAll(".divImg")
+
+    // imagen.forEach((img) => {
+    //     img.classList.toggle("divImgAgrandada")
+    // })
+    img.classList.toggle("divImgAgrandada")
+}
