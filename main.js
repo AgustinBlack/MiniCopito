@@ -3,10 +3,10 @@ const arrayDeCatalogo = [
         id: 1,
         nombre: "Dante",
         imagen: [
-            "./images/enterito-dante.jpeg",
-            "./images/enterito-dante-2.jpeg",
-            "./images/enterito-dante-3.jpeg",
-            "./images/enterito-dante-4.jpeg"
+            "./images/enteritos/enterito-dante.jpeg",
+            "./images/enteritos/enterito-dante-2.jpeg",
+            "./images/enteritos/enterito-dante-3.jpeg",
+            "./images/enteritos/enterito-dante-4.jpeg"
         ],
         estilo: "Enterito",
         talle: "1-2-3-4",
@@ -16,8 +16,8 @@ const arrayDeCatalogo = [
         id: 2,
         nombre: "Astor",
         imagen: [
-            "./images/conjunto-jazmin-3.jpeg",
-            "./images/vestido.jpeg"
+            "./images/conjuntos/conjunto-jazmin-3.jpeg",
+            "./images/vestidos/vestido-floreado.jpg"
         ],
         estilo: "Enterito",
         talle: "1-2-3-4",
@@ -27,9 +27,9 @@ const arrayDeCatalogo = [
         id: 3,
         nombre: "Jazmín",
         imagen: [
-            "./images/conjunto-jazmin.jpeg",
-            "./images/conjunto-jazmin-2.jpeg",
-            "./images/conjunto-jazmin-3.jpeg"
+            "./images/conjuntos/conjunto-jazmin.jpeg",
+            "./images/conjuntos/conjunto-jazmin-2.jpeg",
+            "./images/conjuntos/conjunto-jazmin-3.jpeg"
         ],
             
         estilo: "Conjunto",
@@ -41,8 +41,8 @@ const arrayDeCatalogo = [
         id: 4,
         nombre: "Pedro",
         imagen: [
-            "./images/enterito-dante-3.jpeg",
-            "./images/vestido.jpeg"
+            "./images/enteritos/enterito-dante-3.jpeg",
+            "./images/vestidos/vestido-floreado.jpg"
         ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
@@ -52,8 +52,8 @@ const arrayDeCatalogo = [
         id: 5,
         nombre: "Franka",
         imagen: [
-            "./images/enterito-dante-4.jpeg",
-            "./images/vestido.jpeg"
+            "./images/enteritos/enterito-dante-4.jpeg",
+            "./images/vestidos/vestido-floreado.jpg"
         ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
@@ -63,12 +63,111 @@ const arrayDeCatalogo = [
         id: 6,
         nombre: "Vestido floreado con puntilla",
         imagen: [
-            "./images/vestido.jpeg",
-            "./images/vestido.jpeg"
+            "./images/vestidos/vestido-floreado-puntilla.jpeg",
+            "./images/vestidos/vestido-floreado-puntilla-2.jpeg",
+            "./images/vestidos/vestido-floreado-puntilla-3.jpeg",
+            "./images/vestidos/vestido-floreado-puntilla-4.jpeg",
+            "./images/vestidos/vestido-floreado-puntilla-5.jpeg",
+            "./images/vestidos/vestido-floreado-puntilla-6.jpeg"
         ],
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2800
+    },
+    {
+        id: 7,
+        nombre: "Animal",
+        imagen: [
+            "./images/conjuntos/conjunto-animal.jpg",
+            "./images/conjuntos/conjunto-animal-2.jpg",
+            "./images/conjuntos/conjunto-animal-3.jpg"
+        ] ,
+        estilo: "Conjunto",
+        talle: "1-2-3-4",
+        precio: 3000
+    },
+    {        
+        id: 8,
+        nombre: "Cuadrille", 
+        imagen: [
+            "./images/conjuntos/conjunto-cuadrille.jpg",
+            "./images/conjuntos/conjunto-cuadrille-2.jpg",
+            "./images/conjuntos/conjunto-cuadrille-3.jpg"
+        ],
+        estilo: "Conjunto",
+        talle: "1-2-3-4",
+        precio: 2500
+    },
+    {
+        id: 9,
+        nombre: "Guepardo",
+        imagen: [
+            "./images/conjuntos/conjunto-guepardo.jpg",
+            "./images/conjuntos/conjunto-guepardo-2.jpg",
+            "./images/conjuntos/conjunto-guepardo-3.jpg"
+        ],
+        estilo: "Conjuntos",
+        talle: "1-2-3-4",
+        precio: 2700
+    },
+    {
+        id: 10,
+        nombre: "Moño",
+        imagen: [
+            "./images/conjuntos/conjunto-moño.jpg",
+            "./images/conjuntos/conjunto-moño-2.jpg",
+            "./images/conjuntos/conjunto-moño-3.jpg"
+        ],
+        estilo: "Conjuntos",
+        talle: "1-2-3-4",
+        precio: 2600
+    },
+    {
+        id: 11,
+        nombre: "Enterito",
+        imagen: [
+            "./images/enteritos/enterito.jpg",
+            "./images/enteritos/enterito-2.jpg"
+        ],
+        estilo: "Enterito",
+        talle: "1-2-3-4",
+        precio: 2000
+    },
+    {
+        id: 12,
+        nombre: "Conejo",
+        imagen: [
+            "./images/enteritos/enterito-conejo.jpg",
+            "./images/enteritos/enterito-conejo-2.jpg",
+            "./images/enteritos/enterito-conejo-3.jpg"
+        ],
+        estilo: "Enterito",
+        talle: "1-2-3-4",
+        precio: 2400
+    },
+    {
+        id: 13,
+        nombre: "Floreado",
+        imagen: [
+            "./images/vestidos/vestido-floreado.jpg",
+            "./images/vestidos/vestido-floreado-2.jpg",
+            "./images/vestidos/vestido-floreado-3.jpg",
+            "./images/vestidos/vestido-floreado-4.jpg"
+        ],
+        estilo: "Vestido",
+        talle: "1-2-3-4",
+        precio: 2800
+    },
+    {
+        id: 14,
+        nombre: "Vestido Moño",
+        imagen: [
+            "./images/vestidos/vestido-moño.jpg",
+            "./images/vestidos/vestido-moño-2.jpg"
+        ],
+        estilo: "Vestido",
+        talle: "1-2-3-4",
+        precio: 2900
     }
 ]
 
@@ -160,10 +259,5 @@ botonInicio.addEventListener("click", function() {
 //FUNCION QUE AGRANDA IMG
 
 function agrandarImagen(img) {
-    // let imagen = document.querySelectorAll(".divImg")
-
-    // imagen.forEach((img) => {
-    //     img.classList.toggle("divImgAgrandada")
-    // })
     img.classList.toggle("divImgAgrandada")
 }
