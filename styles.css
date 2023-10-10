@@ -123,6 +123,11 @@ body{
     color: #1D3557;
 }
 
+.divCardAgotado{
+    opacity: 90%;
+    background-color: grey;
+}
+
 /* FOOTER */
 
 .piePagina{

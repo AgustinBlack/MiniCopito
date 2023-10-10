@@ -1,27 +1,27 @@
 const arrayDeCatalogo = [
-    {            
+    {
         id: 1,
-        nombre: "Dante",
+        nombre: "Osito",
         imagen: [
-            "./images/enteritos/enterito-dante.jpeg",
-            "./images/enteritos/enterito-dante-2.jpeg",
-            "./images/enteritos/enterito-dante-3.jpeg",
-            "./images/enteritos/enterito-dante-4.jpeg"
+            "./images/enteritos/enterito-ositos(1).jpeg",
+            "./images/enteritos/enterito-ositos(2).jpeg"
         ],
-        estilo: "Enterito",
+        estilo: "Body",
         talle: "1-2-3-4",
-        precio: 1800
+        precio: 1950,
+        estado: "STOCK"
     },
     {
         id: 2,
-        nombre: "Astor",
+        nombre: "Camila",
         imagen: [
-            "./images/conjuntos/conjunto-jazmin-3.jpeg",
-            "./images/vestidos/vestido-floreado.jpg"
+            "./images/conjuntos/conjunto-camila(1).jpeg",
+            "./images/conjuntos/conjunto-camila(2).jpeg"
         ],
-        estilo: "Enterito",
+        estilo: "Conjunto",
         talle: "1-2-3-4",
-        precio: 1900
+        precio: 2500,
+        estado: "STOCK"
     },
     {
         id: 3,
@@ -31,150 +31,120 @@ const arrayDeCatalogo = [
             "./images/conjuntos/conjunto-jazmin-2.jpeg",
             "./images/conjuntos/conjunto-jazmin-3.jpeg"
         ],
-            
         estilo: "Conjunto",
         talle: "1-2-3-4",
-        precio: 2450
+        precio: 2450,
+        estado: "STOCK"
     },
 
     {
         id: 4,
-        nombre: "Pedro",
+        nombre: "Floricienta",
         imagen: [
-            "./images/enteritos/enterito-dante-3.jpeg",
-            "./images/vestidos/vestido-floreado.jpg"
+            "./images/vestidos/vestido-floricienta(1).jpeg",
+            "./images/vestidos/vestido-floricienta(2).jpeg"
         ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
-        precio: 2300
+        precio: 2700,
+        estado: "STOCK"
     },
     {
         id: 5,
-        nombre: "Franka",
+        nombre: "Morley",
         imagen: [
-            "./images/enteritos/enterito-dante-4.jpeg",
-            "./images/vestidos/vestido-floreado.jpg"
+            "./images/vestidos/vestido-morley(1).jpeg",
+            "./images/vestidos/vestido-morley(2).jpg",
+            "./images/vestidos/vestido-morley(3).jpg",
+            "./images/vestidos/vestido-morley(4).jpg"
         ],
-        estilo: "Conjunto",
+        estilo: "Vestido",
         talle: "1-2-3-4",
-        precio: 2000
+        precio: 2600,
+        estado: "STOCK"
     },
     {
         id: 6,
-        nombre: "Vestido floreado con puntilla",
+        nombre: "Short y Vincha",
         imagen: [
-            "./images/vestidos/vestido-floreado-puntilla.jpeg",
-            "./images/vestidos/vestido-floreado-puntilla-2.jpeg",
-            "./images/vestidos/vestido-floreado-puntilla-3.jpeg",
-            "./images/vestidos/vestido-floreado-puntilla-4.jpeg",
-            "./images/vestidos/vestido-floreado-puntilla-5.jpeg",
-            "./images/vestidos/vestido-floreado-puntilla-6.jpeg"
+            "./images/enteritos/body-short-vincha(1).jpeg",
+            "./images/enteritos/body-short-vincha(2).jpeg",
         ],
-        estilo: "Vestido",
+        estilo: "Body",
         talle: "1-2-3-4",
-        precio: 2800
+        precio: 2700,
+        estado: "STOCK"
     },
     {
         id: 7,
-        nombre: "Animal",
+        nombre: "Mara",
         imagen: [
-            "./images/conjuntos/conjunto-animal.jpg",
-            "./images/conjuntos/conjunto-animal-2.jpg",
-            "./images/conjuntos/conjunto-animal-3.jpg"
+            "./images/conjuntos/conjunto-mara(1).jpeg",
+            "./images/conjuntos/conjunto-mara(2).jpeg",
+            "./images/conjuntos/conjunto-mara(3).jpeg",
+            "./images/conjuntos/conjunto-mara(4).jpeg"
         ] ,
         estilo: "Conjunto",
         talle: "1-2-3-4",
-        precio: 3000
+        precio: 2500,
+        estado: "STOCK"
     },
-    {        
+    {
         id: 8,
-        nombre: "Cuadrille", 
+        nombre: "Agustina",
         imagen: [
-            "./images/conjuntos/conjunto-cuadrille.jpg",
-            "./images/conjuntos/conjunto-cuadrille-2.jpg",
-            "./images/conjuntos/conjunto-cuadrille-3.jpg"
+            "./images/enteritos/body-jazmin(1).jpeg",
+            "./images/enteritos/body-jazmin(2).jpeg",
+            "./images/enteritos/body-jazmin(3).jpeg",
+            "./images/enteritos/body-jazmin(4).jpeg"
         ],
-        estilo: "Conjunto",
+        estilo: "Body",
         talle: "1-2-3-4",
-        precio: 2500
+        precio: 3500,
+        estado: "AGOTADO"
     },
     {
         id: 9,
-        nombre: "Guepardo",
+        nombre: "Print",
         imagen: [
-            "./images/conjuntos/conjunto-guepardo.jpg",
-            "./images/conjuntos/conjunto-guepardo-2.jpg",
-            "./images/conjuntos/conjunto-guepardo-3.jpg"
+            "./images/vestidos/vestido-print(1).jpeg",
+            "./images/vestidos/vestido-print(2).jpeg",
+            "./images/vestidos/vestido-print(3).jpeg"
         ],
-        estilo: "Conjuntos",
+        estilo: "Vestido",
         talle: "1-2-3-4",
-        precio: 2700
+        precio: 2600,
+        estado: "STOCK"
     },
     {
         id: 10,
-        nombre: "Moño",
+        nombre: "Conejo",
         imagen: [
-            "./images/conjuntos/conjunto-moño.jpg",
-            "./images/conjuntos/conjunto-moño-2.jpg",
-            "./images/conjuntos/conjunto-moño-3.jpg"
+            "./images/enteritos/campera-conejo(1).jpeg",
+            "./images/enteritos/campera-conejo(2).jpeg"
         ],
-        estilo: "Conjuntos",
+        estilo: "Body",
         talle: "1-2-3-4",
-        precio: 2600
+        precio: 2500,
+        estado: "STOCK"
     },
     {
         id: 11,
-        nombre: "Enterito",
+        nombre: "Gasa",
         imagen: [
-            "./images/enteritos/enterito.jpg",
-            "./images/enteritos/enterito-2.jpg"
-        ],
-        estilo: "Enterito",
-        talle: "1-2-3-4",
-        precio: 2000
-    },
-    {
-        id: 12,
-        nombre: "Conejo",
-        imagen: [
-            "./images/enteritos/enterito-conejo.jpg",
-            "./images/enteritos/enterito-conejo-2.jpg",
-            "./images/enteritos/enterito-conejo-3.jpg"
-        ],
-        estilo: "Enterito",
-        talle: "1-2-3-4",
-        precio: 2400
-    },
-    {
-        id: 13,
-        nombre: "Floreado",
-        imagen: [
-            "./images/vestidos/vestido-floreado.jpg",
-            "./images/vestidos/vestido-floreado-2.jpg",
-            "./images/vestidos/vestido-floreado-3.jpg",
-            "./images/vestidos/vestido-floreado-4.jpg"
+            "./images/vestidos/vestido-gasa.jpeg"
         ],
         estilo: "Vestido",
         talle: "1-2-3-4",
-        precio: 2800
-    },
-    {
-        id: 14,
-        nombre: "Vestido Moño",
-        imagen: [
-            "./images/vestidos/vestido-moño.jpg",
-            "./images/vestidos/vestido-moño-2.jpg"
-        ],
-        estilo: "Vestido",
-        talle: "1-2-3-4",
-        precio: 2900
+        precio: 2700,
+        estado: "STOCK"
     }
 ]
 
 function mostrarProductos(arrayProductos) {
     let contenedor = document.getElementById("divProductos")
     contenedor.innerHTML = ""
-    
+
     arrayProductos.forEach((producto) => {
         let card = document.createElement("div")
         card.innerHTML = `
@@ -190,7 +160,7 @@ function mostrarProductos(arrayProductos) {
                         <div class="carousel-item">
                             <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[1]}" class="d-block w-100" alt="...">
                         </div>
-                        ` 
+                        `
                         :''}
 
                         ${producto.imagen.length > 2 ? `
@@ -220,7 +190,9 @@ function mostrarProductos(arrayProductos) {
                     <h6 class="divInfoEstilo">${producto.estilo}</h6>
                     <p class="divInfoTalle">Talle: ${producto.talle}</p>
                     <p class="divInfoPrecio">$${producto.precio}</p>
+                    <p class="divInfoEstado">${producto.estado}</p>
                 </div>
+
             </div>
         `;
 
@@ -229,6 +201,20 @@ function mostrarProductos(arrayProductos) {
 }
 
 mostrarProductos(arrayDeCatalogo)
+//                 // <div>
+//                 //     <button><a></a></button>
+//                 //     <button><a></a></button>
+//                 //     <button><a></a></button>
+//                 //     <button><a></a></button>
+//                 // </div>
+// arrayDeCatalogo.forEach((producto) => {
+//     let imagenes = producto.imagen;
+//     imagenes.forEach((imagen, index) => {
+//       let img = document.querySelector(`img[src="${imagen}"]`);
+//       img.src = imagen;
+//       img.dataset.color = producto.colores[index];
+//     });
+// });
 
 //FILTRAR POR ESTILO
 
@@ -249,7 +235,7 @@ function filtrar() {
     }
 
     mostrarProductos(productosMostrados);
-}   
+}
 
 let botonInicio = document.getElementById("inicioProductos")
 botonInicio.addEventListener("click", function() {
