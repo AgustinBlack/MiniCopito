@@ -41,8 +41,8 @@ const arrayDeCatalogo = [
         id: 4,
         nombre: "Floricienta",
         imagen: [
-            "./images/vestidos/vestido-floricienta(1).jpeg",
-            "./images/vestidos/vestido-floricienta(2).jpeg"
+            "./images/vestidos/vestido-floricienta(2).jpeg",
+            "./images/vestidos/vestido-floricienta(1).jpeg" 
         ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
@@ -138,6 +138,18 @@ const arrayDeCatalogo = [
         talle: "1-2-3-4",
         precio: 2700,
         estado: "STOCK"
+    },
+    {
+        id: 12,
+        nombre: "Flor",
+        imagen: [
+            "./images/conjuntos/conjunto-flor1.jpg",
+            "./images/conjuntos/conjunto-flor2.jpg"
+        ],
+        estilo: "Conjunto",
+        talle: "1-2-3-4",
+        precio: 2500,
+        estado: "STOCK"
     }
 ]
 
@@ -201,20 +213,6 @@ function mostrarProductos(arrayProductos) {
 }
 
 mostrarProductos(arrayDeCatalogo)
-//                 // <div>
-//                 //     <button><a></a></button>
-//                 //     <button><a></a></button>
-//                 //     <button><a></a></button>
-//                 //     <button><a></a></button>
-//                 // </div>
-// arrayDeCatalogo.forEach((producto) => {
-//     let imagenes = producto.imagen;
-//     imagenes.forEach((imagen, index) => {
-//       let img = document.querySelector(`img[src="${imagen}"]`);
-//       img.src = imagen;
-//       img.dataset.color = producto.colores[index];
-//     });
-// });
 
 //FILTRAR POR ESTILO
 

@@ -114,6 +114,10 @@ body{
     margin-bottom: 5px !important;
 }
 
+.divInfoEstado{
+    font-weight: 600;
+}
+
 .carousel-inner {
     height: 220px !important;
     width: 172px !important;
