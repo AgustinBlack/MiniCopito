@@ -93,6 +93,7 @@ body{
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.4);
+    z-index: 2;
 }
 
 .divInfo{
@@ -130,6 +131,16 @@ body{
 .divCardAgotado{
     opacity: 90%;
     background-color: grey;
+}
+
+.carousel-control-prev{
+    background-color: #d6d6d6;
+    border-radius: 3px;
+}
+
+.carousel-control-next{
+    background-color: #d6d6d6;
+    border-radius: 3px;
 }
 
 /* FOOTER */
