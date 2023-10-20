@@ -150,6 +150,62 @@ const arrayDeCatalogo = [
         talle: "1-2-3-4",
         precio: 2500,
         estado: "STOCK"
+    },
+    {
+        id: 13,
+        nombre: "Labrado Rosa",
+        imagen: [
+            "./images/vestidos/vestido-labrado-rosa.jpeg"
+        ],
+        estilo: "Vestido",
+        talle: "1-2-3-4",
+        precio: 2800,
+        estado: "STOCK"
+    },
+    {
+        id: 14,
+        nombre: "Labrado Blanco",
+        imagen: [
+            "./images/vestidos/vestido-labrado-blanco.jpeg"
+        ],
+        estilo: "Vestido",
+        talle: "1-2-3-4",
+        precio: 2800,
+        estado: "STOCK"
+    },
+    {
+        id: 15,
+        nombre: "Wafle Sol",
+        imagen: [
+            "./images/conjuntos/conjunto-wable-sol.jpeg"
+        ],
+        estilo: "Conjunto",
+        talle: "1-2-3-4",
+        precio: 2800,
+        estado: "STOCK"
+    },
+    {
+        id: 14,
+        nombre: "Bello",
+        imagen: [
+            "./images/vestidos/vestido-bello.jpeg",
+            "./images/vestidos/vestido-bello-2.jpeg"
+        ],
+        estilo: "Vestido",
+        talle: "1-2-3-4",
+        precio: 3000,
+        estado: "STOCK"
+    },
+    {
+        id: 1,
+        nombre: "Bello Ardillas",
+        imagen: [
+            "./images/vestidos/vestido-bello-2.jpeg"
+        ],
+        estilo: "Vestido",
+        talle: "1-2-3-4",
+        precio: 3000,
+        estado: "STOCK"
     }
 ]
 
@@ -160,30 +216,29 @@ function mostrarProductos(arrayProductos) {
     arrayProductos.forEach((producto) => {
         let card = document.createElement("div")
         card.innerHTML = `
-            <div class="divCard">
+            <div class="divCard" id="divCardId">
                 <div id="${producto.id}" class="carousel slide">
                     <div class="carousel-inner">
-
                         <div class="carousel-item active">
-                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[0]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[0]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
                         </div>
 
                         ${producto.imagen.length > 1 ? `
                         <div class="carousel-item">
-                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[1]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[1]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
                         </div>
                         `
                         :''}
 
                         ${producto.imagen.length > 2 ? `
                         <div class="carousel-item">
-                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[2]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[2]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
                         </div>
                         ` : ''}
 
                         ${producto.imagen.length > 3 ? `
                         <div class="carousel-item">
-                            <img class="divImg" id="botonImg${producto.id}" onClick="agrandarImagen(this)" src="${producto.imagen[3]}" class="d-block w-100" alt="...">
+                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[3]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
                         </div>
                         ` : ''}
 
@@ -241,7 +296,7 @@ botonInicio.addEventListener("click", function() {
 })
 
 //FUNCION QUE AGRANDA IMG
-
+  
 function agrandarImagen(img) {
-    img.classList.toggle("divImgAgrandada")
+    img.classList.toggle("divImgAgrandada");
 }

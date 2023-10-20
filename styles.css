@@ -85,15 +85,13 @@ body{
     width: 171px;
     height: 220px;
     border-radius: 5px;
-    transition: transform 0.5s;
+    transition: 1s;
 }
 
 .divImgAgrandada{
-    position: fixed;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.4);
-    z-index: 2;
+    transform: scale(1.4);
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .divInfo{
@@ -122,15 +120,11 @@ body{
 .carousel-inner {
     height: 220px !important;
     width: 172px !important;
+    border-radius: 5px;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
     color: #1D3557;
-}
-
-.divCardAgotado{
-    opacity: 90%;
-    background-color: grey;
 }
 
 .carousel-control-prev{
@@ -221,15 +215,22 @@ body{
     .divCard{
         margin-left: 5px;
         margin-right: 5px;
+        width: 340px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .divImg{
-        width: 145px;
-        height: 210px;
+        width: 160px;
+        height: 216px;
+    }
+
+    .divInfo{
+        margin-left: 10px;
     }
 
     .divInfoNombre{
-        width: 110px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -237,7 +238,7 @@ body{
 
     .carousel-inner {
         height: 216px !important;
-        width: 146px !important;
+        width: 160px !important;
     }
 
     .piePaginaTitulo{
@@ -252,5 +253,14 @@ body{
 
     .piePaginaTexto{
         text-align: center;
+    }
+}
+
+@media(max-width: 370px) {
+    .divCard{
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        margin-top: 10px;
     }
 }
