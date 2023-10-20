@@ -263,4 +263,8 @@ body{
         width: 180px;
         margin-top: 10px;
     }
+
+    .divInfo {
+        margin-left: 0px;
+    }
 }
