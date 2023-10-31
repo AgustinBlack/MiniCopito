@@ -6,7 +6,7 @@ const arrayDeCatalogo = [
             "./images/enteritos/enterito-ositos(1).jpeg",
             "./images/enteritos/enterito-ositos(2).jpeg"
         ],
-        estilo: "Body",
+        estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 1950,
         estado: "STOCK"
@@ -123,7 +123,7 @@ const arrayDeCatalogo = [
             "./images/enteritos/campera-conejo(1).jpeg",
             "./images/enteritos/campera-conejo(2).jpeg"
         ],
-        estilo: "Body",
+        estilo: "Campera",
         talle: "1-2-3-4",
         precio: 2500,
         estado: "STOCK"
