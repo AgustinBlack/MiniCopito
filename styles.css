@@ -89,8 +89,8 @@ body{
 }
 
 .divImgAgrandada{
-    transform: scale(1.4);
-    object-fit: cover;
+    transform: scale(1.6);
+    object-fit: initial;
     border-radius: 5px;
 }
 

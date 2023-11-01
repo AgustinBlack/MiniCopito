@@ -218,7 +218,7 @@ function mostrarProductos(arrayProductos) {
         card.innerHTML = `
             <div class="divCard" id="divCardId">
                 <div id="${producto.id}" class="carousel slide">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" id="contenedorImg">
                         <div class="carousel-item active">
                             <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[0]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
                         </div>
