@@ -4,12 +4,13 @@ const arrayDeCatalogo = [
         nombre: "Osito",
         imagen: [
             "./images/enteritos/enterito-ositos(1).jpeg",
-            "./images/enteritos/enterito-ositos(2).jpeg"
+            "./images/enteritos/enterito-ositos(2).jpeg",
+            "./images/enteritos/enterito-ositos(3).jpeg"
         ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 1950,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 2,
@@ -21,7 +22,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2500,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 3,
@@ -34,7 +35,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2450,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
 
     {
@@ -47,7 +48,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2700,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 5,
@@ -61,7 +62,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2600,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 6,
@@ -73,7 +74,7 @@ const arrayDeCatalogo = [
         estilo: "Body",
         talle: "1-2-3-4",
         precio: 2700,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 7,
@@ -87,7 +88,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2500,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 8,
@@ -114,7 +115,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2600,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 10,
@@ -126,7 +127,7 @@ const arrayDeCatalogo = [
         estilo: "Campera",
         talle: "1-2-3-4",
         precio: 2500,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 11,
@@ -137,7 +138,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2700,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 12,
@@ -149,7 +150,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2500,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 13,
@@ -160,7 +161,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2800,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 14,
@@ -171,7 +172,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2800,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 15,
@@ -182,7 +183,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2800,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 14,
@@ -194,7 +195,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 3000,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     },
     {
         id: 1,
@@ -205,7 +206,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 3000,
-        estado: "STOCK"
+        estado: "DISPONIBLE"
     }
 ]
 
