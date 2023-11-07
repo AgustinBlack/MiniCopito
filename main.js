@@ -265,19 +265,19 @@ function mostrarProductos(arrayProductos) {
                         ` : ''}
 
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#${producto.id}" data-bs-slide="prev">
+                    <button class="carousel-control-prev notranslate" type="button" data-bs-target="#${producto.id}" data-bs-slide="prev">
                         <span class="material-symbols-outlined">arrow_back_ios_new</span>                        
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#${producto.id}" data-bs-slide="next">
+                    <button class="carousel-control-next notranslate" type="button" data-bs-target="#${producto.id}" data-bs-slide="next">
                         <span class="material-symbols-outlined">arrow_forward_ios</span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
                 <div class="divInfo">
-                    <h3 class="divInfoNombre">${producto.nombre}</h3>
+                    <h3 class="divInfoNombre notranslate">${producto.nombre}</h3>
                     <h6 class="divInfoEstilo">${producto.estilo}</h6>
-                    <p class="divInfoTalle">Talle: ${producto.talle}</p>
+                    <p class="divInfoTalle notranslate">Talle: ${producto.talle}</p>
                     <p class="divInfoPrecio">$${producto.precio}</p>
                     <div class="color-option">
                         <span class="color">
