@@ -276,34 +276,35 @@ function mostrarProductos(arrayProductos) {
                 </div>
                 <div class="divInfo">
                     <h3 class="divInfoNombre notranslate">${producto.nombre}</h3>
-                    <h6 class="divInfoEstilo">${producto.estilo}</h6>
+                    <h6 class="divInfoEstilo notranslate">${producto.estilo}</h6>
                     <p class="divInfoTalle notranslate">Talle: ${producto.talle}</p>
-                    <p class="divInfoPrecio">$${producto.precio}</p>
+                    <p class="divInfoPrecio notranslate">$${producto.precio}</p>
+                    <p class="divInfoEstado notranslate">${producto.estado}</p>
                     <div class="color-option">
                         <span class="color">
                             Color :
                         </span>
                         <div class="circles">
-                            <span class="cicle active" id="circlebtn><a>${producto.imagen[0]}</a></span>
+                            <span class="cicle active" id="circlebtn></span>
 
                             ${producto.color.length > 1 ? `
-                            <span class="cicle active" id="circlebtn><a>${producto.imagen[1]}</a></span>
+                            <span class="cicle active" id="circlebtn></span>
                             `
                             :''}
 
                             ${producto.color.length > 2 ? `
-                            <span class="cicle active" id="circlebtn><a>${producto.imagen[2]}</a></span>
+                            <span class="cicle active" id="circlebtn></span>
                             `
                             :''}
 
                             ${producto.color.length > 3 ? `
-                            <span class="cicle active" id="circlebtn><a>${producto.imagen[3]}</a></span>
+                            <span class="cicle active" id="circlebtn></span>
                             `
                             :''}
                         </div>                    
 
                     </div>
-                    <p class="divInfoEstado">${producto.estado}</p>
+                    
 
             </div>
         `;
