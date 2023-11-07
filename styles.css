@@ -113,6 +113,10 @@ body{
     margin-bottom: 5px !important;
 }
 
+.divInfoColor{
+    margin-bottom: 5px !important;
+}
+
 .divInfoEstado{
     font-weight: 600;
 }
@@ -123,18 +127,8 @@ body{
     border-radius: 5px;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    color: #1D3557;
-}
-
-.carousel-control-prev{
-    background-color: #d6d6d6;
-    border-radius: 3px;
-}
-
-.carousel-control-next{
-    background-color: #d6d6d6;
-    border-radius: 3px;
+.material-symbols-outlined{
+    color: #1D3557 !important;
 }
 
 /* FOOTER */

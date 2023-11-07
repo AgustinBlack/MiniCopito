@@ -10,7 +10,12 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 1950,
+        color: [
+            "Celeste",
+            "Blanco"
+        ] ,
         estado: "DISPONIBLE"
+        
     },
     {
         id: 2,
@@ -22,6 +27,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2500,
+        color: "Rosa-Blanco",
         estado: "DISPONIBLE"
     },
     {
@@ -35,6 +41,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2450,
+        color: "Rosa-Beige-Blanco",
         estado: "DISPONIBLE"
     },
 
@@ -48,6 +55,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2700,
+        color: "Beige-Azul oscuro",
         estado: "DISPONIBLE"
     },
     {
@@ -62,6 +70,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2600,
+        color: "Celeste-Negro-Celeste y Rojo-Blanco",
         estado: "DISPONIBLE"
     },
     {
@@ -74,6 +83,7 @@ const arrayDeCatalogo = [
         estilo: "Body",
         talle: "1-2-3-4",
         precio: 2700,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -88,6 +98,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2500,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -102,6 +113,7 @@ const arrayDeCatalogo = [
         estilo: "Body",
         talle: "1-2-3-4",
         precio: 3500,
+        color: "Rojo-Azul-Negro",
         estado: "AGOTADO"
     },
     {
@@ -115,6 +127,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2600,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -127,6 +140,7 @@ const arrayDeCatalogo = [
         estilo: "Campera",
         talle: "1-2-3-4",
         precio: 2500,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -138,6 +152,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2700,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -150,6 +165,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2500,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -161,6 +177,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2800,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -172,6 +189,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 2800,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -183,6 +201,7 @@ const arrayDeCatalogo = [
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 2800,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -195,6 +214,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 3000,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     },
     {
@@ -206,6 +226,7 @@ const arrayDeCatalogo = [
         estilo: "Vestido",
         talle: "1-2-3-4",
         precio: 3000,
+        color: "Rojo-Azul-Negro",
         estado: "DISPONIBLE"
     }
 ]
@@ -245,11 +266,11 @@ function mostrarProductos(arrayProductos) {
 
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#${producto.id}" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="material-symbols-outlined">arrow_back_ios_new</span>                        
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#${producto.id}" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -258,8 +279,31 @@ function mostrarProductos(arrayProductos) {
                     <h6 class="divInfoEstilo">${producto.estilo}</h6>
                     <p class="divInfoTalle">Talle: ${producto.talle}</p>
                     <p class="divInfoPrecio">$${producto.precio}</p>
+                    <div class="color-option">
+                        <span class="color">
+                            Color :
+                        </span>
+                        <div class="circles">
+                            <span class="cicle active" id="circlebtn><a>${producto.imagen[0]}</a></span>
+
+                            ${producto.color.length > 1 ? `
+                            <span class="cicle active" id="circlebtn><a>${producto.imagen[1]}</a></span>
+                            `
+                            :''}
+
+                            ${producto.color.length > 2 ? `
+                            <span class="cicle active" id="circlebtn><a>${producto.imagen[2]}</a></span>
+                            `
+                            :''}
+
+                            ${producto.color.length > 3 ? `
+                            <span class="cicle active" id="circlebtn><a>${producto.imagen[3]}</a></span>
+                            `
+                            :''}
+                        </div>                    
+
+                    </div>
                     <p class="divInfoEstado">${producto.estado}</p>
-                </div>
 
             </div>
         `;
@@ -301,3 +345,16 @@ botonInicio.addEventListener("click", function() {
 function agrandarImagen(img) {
     img.classList.toggle("divImgAgrandada");
 }
+
+
+let circulo = document.getElementById("circulo");
+
+circulo.addEventListener("click", (e) => {
+    let target = e.target
+    if (target.classList.contains("circles")) {
+        circulo.querySelector(".active").classList.remove("active")
+        target.classList.add("active")
+        document.querySelector(".main-images  .active").classList.remove("active")
+        document.querySelector(`.main-images .${target.id}`).classList.add("active")
+    }
+});
