@@ -280,30 +280,7 @@ function mostrarProductos(arrayProductos) {
                     <p class="divInfoTalle notranslate">Talle: ${producto.talle}</p>
                     <p class="divInfoPrecio notranslate">$${producto.precio}</p>
                     <p class="divInfoEstado notranslate">${producto.estado}</p>
-                    <div class="color-option">
-                        <span class="color">
-                            Color :
-                        </span>
-                        <div class="circles">
-                            <span class="cicle active" id="circlebtn></span>
 
-                            ${producto.color.length > 1 ? `
-                            <span class="cicle active" id="circlebtn></span>
-                            `
-                            :''}
-
-                            ${producto.color.length > 2 ? `
-                            <span class="cicle active" id="circlebtn></span>
-                            `
-                            :''}
-
-                            ${producto.color.length > 3 ? `
-                            <span class="cicle active" id="circlebtn></span>
-                            `
-                            :''}
-                        </div>                    
-
-                    </div>
                     
 
             </div>
