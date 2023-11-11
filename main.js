@@ -7,14 +7,14 @@ const arrayDeCatalogo = [
             "./images/enteritos/enterito-ositos(2).jpeg",
             "./images/enteritos/enterito-ositos(3).jpeg"
         ],
+        dataColor: [
+            "Celeste",
+            "Blanco"
+        ],
         estilo: "Conjunto",
         talle: "1-2-3-4",
         precio: 1950,
-        color: [
-            "Celeste",
-            "Blanco"
-        ] ,
-        estado: "DISPONIBLE"
+        estado: "AGOTADO"
         
     },
     {
@@ -232,62 +232,59 @@ const arrayDeCatalogo = [
 ]
 
 function mostrarProductos(arrayProductos) {
-    let contenedor = document.getElementById("divProductos")
-    contenedor.innerHTML = ""
+     let contenedor = document.getElementById("divProductos")
+     contenedor.innerHTML = ""
 
-    arrayProductos.forEach((producto) => {
-        let card = document.createElement("div")
-        card.innerHTML = `
-            <div class="divCard" id="divCardId">
-                <div id="${producto.id}" class="carousel slide">
-                    <div class="carousel-inner" id="contenedorImg">
-                        <div class="carousel-item active">
-                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[0]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
-                        </div>
+     arrayProductos.forEach((producto) => {
+         let card = document.createElement("div")
+         card.innerHTML = `
+             <div class="divCard" id="divCardId">
+                 <div id="${producto.id}" class="carousel slide">
+                     <div class="carousel-inner" id="contenedorImg">
+                         <div class="carousel-item active">
+                             <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[0]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
+                         </div>
 
-                        ${producto.imagen.length > 1 ? `
-                        <div class="carousel-item">
-                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[1]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
-                        </div>
-                        `
-                        :''}
+                         ${producto.imagen.length > 1 ? `
+                         <div class="carousel-item">
+                             <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[1]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
+                         </div>
+                         `
+                         :''}
 
-                        ${producto.imagen.length > 2 ? `
-                        <div class="carousel-item">
-                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[2]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
-                        </div>
-                        ` : ''}
+                         ${producto.imagen.length > 2 ? `
+                         <div class="carousel-item">
+                             <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[2]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
+                         </div>
+                         ` : ''}
 
-                        ${producto.imagen.length > 3 ? `
-                        <div class="carousel-item">
-                            <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[3]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
-                        </div>
-                        ` : ''}
+                         ${producto.imagen.length > 3 ? `
+                         <div class="carousel-item">
+                             <img class="divImg" id="botonImg${producto.id}" src="${producto.imagen[3]}" onClick="agrandarImagen(this)" class="d-block w-100" alt="...">
+                         </div>
+                         ` : ''}
 
-                    </div>
-                    <button class="carousel-control-prev notranslate" type="button" data-bs-target="#${producto.id}" data-bs-slide="prev">
-                        <span class="material-symbols-outlined">arrow_back_ios_new</span>                        
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next notranslate" type="button" data-bs-target="#${producto.id}" data-bs-slide="next">
-                        <span class="material-symbols-outlined">arrow_forward_ios</span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="divInfo">
-                    <h3 class="divInfoNombre notranslate">${producto.nombre}</h3>
-                    <h6 class="divInfoEstilo notranslate">${producto.estilo}</h6>
-                    <p class="divInfoTalle notranslate">Talle: ${producto.talle}</p>
-                    <p class="divInfoPrecio notranslate">$${producto.precio}</p>
-                    <p class="divInfoEstado notranslate">${producto.estado}</p>
+                     </div>
+                     <button class="carousel-control-prev notranslate" type="button" data-bs-target="#${producto.id}" data-bs-slide="prev">
+                         <span class="material-symbols-outlined">arrow_back_ios_new</span>                        
+                         <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next notranslate" type="button" data-bs-target="#${producto.id}" data-bs-slide="next">
+                         <span class="material-symbols-outlined">arrow_forward_ios</span>
+                         <span class="visually-hidden">Next</span>
+                     </button>
+                 </div>
+                 <div class="divInfo">
+                     <h3 class="divInfoNombre notranslate">${producto.nombre}</h3>
+                     <h6 class="divInfoEstilo notranslate">${producto.estilo}</h6>
+                     <p class="divInfoTalle notranslate">Talle: ${producto.talle}</p>
+                     <p class="divInfoPrecio notranslate">$${producto.precio}</p>
+                     <p class="divInfoEstado notranslate">${producto.estado}</p>
+             </div>
+         `;
 
-                    
-
-            </div>
-        `;
-
-        contenedor.appendChild(card);
-    });
+         contenedor.appendChild(card);
+     });
 }
 
 mostrarProductos(arrayDeCatalogo)
@@ -302,13 +299,7 @@ for (let i = 0; i < botones.length; i++) {
 
 function filtrar() {
     let botonTocado = this.textContent.toLowerCase();
-    let productosMostrados = [];
-
-    for (let i = 0; i < arrayDeCatalogo.length; i++) {
-        if (arrayDeCatalogo[i].estilo.toLowerCase().includes(botonTocado)) {
-            productosMostrados.push(arrayDeCatalogo[i]);
-        }
-    }
+    let productosMostrados = arrayDeCatalogo.filter(producto => producto.estilo.toLowerCase().includes(botonTocado));
 
     mostrarProductos(productosMostrados);
 }
@@ -324,15 +315,4 @@ function agrandarImagen(img) {
     img.classList.toggle("divImgAgrandada");
 }
 
-
-let circulo = document.getElementById("circulo");
-
-circulo.addEventListener("click", (e) => {
-    let target = e.target
-    if (target.classList.contains("circles")) {
-        circulo.querySelector(".active").classList.remove("active")
-        target.classList.add("active")
-        document.querySelector(".main-images  .active").classList.remove("active")
-        document.querySelector(`.main-images .${target.id}`).classList.add("active")
-    }
-});
+//FUNCION QUE MUESTRA EL COLOR DEL PRODUCTO

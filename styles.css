@@ -113,29 +113,6 @@ body{
     margin-bottom: 5px !important;
 }
 
-.color-option{
-    display: flex;
-    align-items: center;
-}
-
-.color{
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-    margin-right: 8px;
-}
-
-.circles{
-    height: 18px;
-    width: 18px;
-    background-color: #E63946;
-    border-radius: 50%;
-    margin: 0 4px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    
-}
-
 .divInfoEstado{
     font-weight: 600;
 }
@@ -167,14 +144,14 @@ body{
 
 .piePaginaInfo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .piePaginaFotos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
 }
 
@@ -183,6 +160,7 @@ body{
     height: 140px;
     border-radius: 10px;
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 .piePaginaFotosLogoDos{
@@ -286,5 +264,11 @@ body{
 
     .divInfo {
         margin-left: 0px;
+    }
+
+    .piePaginaFotos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
